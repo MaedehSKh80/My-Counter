@@ -9,3 +9,14 @@ increaseBtnEl.addEventListener("click", function () {
   const newValue = currentValueAsaNumber + 1;
   counterValueEl.textContent = newValue;
 });
+
+const decreaseBtnEl = document.querySelector(".counter_button--decrease");
+
+decreaseBtnEl.addEventListener("click", function () {
+  const currentValue = counterValueEl.textContent;
+  //convert current value to int
+  const currentValueAsaNumber = +currentValue;
+  // calculating new values
+  const newValue = currentValueAsaNumber - 1;
+  counterValueEl.textContent = newValue;
+});
