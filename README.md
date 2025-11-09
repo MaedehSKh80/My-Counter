@@ -56,7 +56,7 @@ Maedeh Sadat Khorasani
 
 ⚙️ License
 
-This project is open source and available under [ My License ] (https://itsMaedehSKh.ir)
+This project is open source and available under [ My License ](https://itsMaedehSKh.ir)
 
 
 
