@@ -6,7 +6,7 @@ const resetBtnEl = document.querySelector(".counter-reset-btn");
 // value
 const counterValueEl = document.querySelector(".counter-value");
 
-// functions , uncrese , decrease , reset
+// functions , increse , decrease , reset
 function increaseFunc() {
   // having current value and making it a number
   const currentValue = counterValueEl.textContent;
@@ -22,13 +22,16 @@ function decreaseFunc() {
   const currentValue = counterValueEl.textContent;
   const currentValueAsaNumber = +currentValue;
 
-  // decreaseing value
-  const newValue = currentValueAsaNumber - 1;
-  counterValueEl.textContent = newValue;
+  if (currentValueAsaNumber > 0) {
+    // decreaseing value
+    counterValueEl.textContent = currentValueAsaNumber - 1;
+  } else if (currentValueAsaNumber <= 0) {
+    counterValueEl.textContent = 0;
+  }
 }
 
 function resetbtnFunc() {
-  // making any value null 
+  // making any value null
   counterValueEl.textContent = 0;
 }
 
