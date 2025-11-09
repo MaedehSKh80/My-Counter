@@ -1,28 +1,38 @@
+// btns
 const increaseBtnEl = document.querySelector(".counter_button--increase");
-const counterValueEl = document.querySelector(".counter-value");
-
-increaseBtnEl.addEventListener("click", function () {
-  const currentValue = counterValueEl.textContent;
-  //convert current value to int
-  const currentValueAsaNumber = +currentValue;
-  // calculating new values
-  const newValue = currentValueAsaNumber + 1;
-  counterValueEl.textContent = newValue;
-});
-
 const decreaseBtnEl = document.querySelector(".counter_button--decrease");
-
-decreaseBtnEl.addEventListener("click", function () {
-  const currentValue = counterValueEl.textContent;
-  //convert current value to int
-  const currentValueAsaNumber = +currentValue;
-  // calculating new values
-  const newValue = currentValueAsaNumber - 1;
-  counterValueEl.textContent = newValue;
-});
-
 const resetBtnEl = document.querySelector(".counter-reset-btn");
 
-resetBtnEl.addEventListener("click", function () {
+// value
+const counterValueEl = document.querySelector(".counter-value");
+
+// functions , uncrese , decrease , reset
+function increaseFunc() {
+  // having current value and making it a number
+  const currentValue = counterValueEl.textContent;
+  const currentValueAsaNumber = +currentValue;
+
+  // increasing numbers
+  const newValue = currentValueAsaNumber + 1;
+  counterValueEl.textContent = newValue;
+}
+
+function decreaseFunc() {
+  // having current value and making it a number
+  const currentValue = counterValueEl.textContent;
+  const currentValueAsaNumber = +currentValue;
+
+  // decreaseing value
+  const newValue = currentValueAsaNumber - 1;
+  counterValueEl.textContent = newValue;
+}
+
+function resetbtnFunc() {
+  // making any value null 
   counterValueEl.textContent = 0;
-});
+}
+
+// btns event listener
+increaseBtnEl.addEventListener("click", increaseFunc);
+decreaseBtnEl.addEventListener("click", decreaseFunc);
+resetBtnEl.addEventListener("click", resetbtnFunc);
