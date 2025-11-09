@@ -20,3 +20,9 @@ decreaseBtnEl.addEventListener("click", function () {
   const newValue = currentValueAsaNumber - 1;
   counterValueEl.textContent = newValue;
 });
+
+const resetBtnEl = document.querySelector(".counter-reset-btn");
+
+resetBtnEl.addEventListener("click", function () {
+  counterValueEl.textContent = 0;
+});
