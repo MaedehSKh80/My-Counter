@@ -51,13 +51,3 @@ Maedeh Sadat Khorasani
 💼 [GitHub Profile](https://github.com/MaedehSKh80)
 
 📧 [maedeh.skh80@gmail.com]( maedeh.skh80@gmail.com )
-
-
-
-⚙️ License
-
-This project is open source and available under [ My License ](https://itsMaedehSKh.ir)
-
-
-
-
