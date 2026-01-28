@@ -47,7 +47,6 @@ Preventing invalid states (like negative numbers)
 🧑‍💻 Author
 
 Maedeh Sadat Khorasani
-📍 Based in Iran
 💼 [GitHub Profile](https://github.com/MaedehSKh80)
 
 📧 [maedeh.skh80@gmail.com]( maedeh.skh80@gmail.com )
